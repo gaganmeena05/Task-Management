@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'task_management.tasks.apps.TasksConfig',
+    'tasks',
     'rest_framework',
     'rest_framework.authtoken',
 ]
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'task_management.wsgi.application'
 
 DATABASES = {
     "default": dj_database_url.config(
-        default="postgres://dbname_rsa9_user:D2oE2DiAWhfo5EHHF0Fp8oJZTcuEkjiq@dpg-cm9ti0md3nmc73csmnt0-a/dbname_rsa9", conn_max_age=600
+        default="postgres://dbname_rsa9_user:D2oE2DiAWhfo5EHHF0Fp8oJZTcuEkjiq@dpg-cm9ti0md3nmc73csmnt0-a.singapore-postgres.render.com/dbname_rsa9", conn_max_age=600
     )
 }
 
