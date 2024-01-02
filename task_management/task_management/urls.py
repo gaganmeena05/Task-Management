@@ -22,5 +22,5 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('', RedirectView.as_view(url='/tasks/')),
     path('admin/', admin.site.urls),
-    path('tasks/',include('task_management.tasks.urls')),
+    path('tasks/',include('tasks.urls')),
 ]

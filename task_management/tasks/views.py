@@ -7,8 +7,8 @@ from .serializers import TaskSerializer
 class TaskLists(APIView):
         
     def get(self, request, format=None):
-        tasks = Task.objects.all()
-        serializer = TaskSerializer(tasks, many=True)
+        data = Task.objects.all()
+        serializer = TaskSerializer(data, many=True)
         return Response(serializer.data, status=200)
     
     def post(self, request, format=None):
